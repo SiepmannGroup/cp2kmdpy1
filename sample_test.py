@@ -43,6 +43,25 @@ class cp2kmd():
     def __init__(self,molecule=None, functional=None, project_name=None,dire= '/home/siepmann/singh891/cp2k-6.1.0/data/',
                  temperature= None,box_length=None,number_of_molecules=None,simulation_time=None,CUTOFF=None, SCF_tolerence=None,
                  basis_set=[None], ensemble=None, timestep=None, thermostat=None):
+        """Take all input from user
+
+        :param molecule: name of molecule, defaults to None
+        :type molecule: mb.compound
+        :param functional:
+        :type functional: str
+        :param project_name:
+        :param dire:
+        :param temperature:
+        :param box_length:
+        :param number_of_molecules:
+        :param simulation_time:
+        :param CUTOFF:
+        :param SCF_tolerence:
+        :param basis_set:
+        :param ensemble:
+        :param timestep:
+        :param thermostat:
+        """
         self.molecule=molecule;
         self.molecule.save('molecule.pdb',overwrite='True')
         self.functional=functional;
