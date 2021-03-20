@@ -2,7 +2,7 @@ cloudpickle==1.4.1
 deprecation==2.1.0
 filelock==3.0.12
 foyer==0.7.4
-Jinja2==2.11.2
+Jinja2==2.11.3
 MarkupSafe==1.1.1
 mbuild==0.10.5
 numpy==1.18.4
